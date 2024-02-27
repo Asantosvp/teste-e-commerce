@@ -1,0 +1,26 @@
+header p {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    left: 260px;
+
+}
+
+.header p, .header span {
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    left: 260px;
+}
+
+.details {
+    color: #7A306C;
+    font-size: 16px;
+    font-weight: 500;
+}  
