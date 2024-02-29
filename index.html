@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js"></script>
     <title> Teste e-commerce</title>
@@ -24,9 +26,111 @@
 
         <p class="details">Ver detalhes</p>
     </header>
+
+    <main class="main">
+        <section class="main-section">
+                <div class="main-container">
+                    <div class="showcase_01">
+                        <img src="./assets/imagens/carrossel-img-prod-01.jpg" alt="">
+                    </div>
+
+                    <div class="showcase_02">
+                        <img src="./assets/imagens/carrossel-img-prod-02.jpg" alt="">
+                    </div>
+
+                    <div class="showcase_03">
+                        <img src="./assets/imagens/carrossel-img-prod-03.jpg" alt="">
+                    </div>
+
+                    <div class="showcase_04">
+                        <img src="./assets/imagens/carrossel-img-prod-04.jpg" alt="">
+                    </div>
+                
+
+                <nav class="navigation">
+                    <div class="right-navigation">
+                            <p class="dress">Vestido Intense Manga Longa</p>
+                            <p class="ref">Ref: 00000000</p>
+                            <img src="./assets/icones/Estrelas-Avaliações.png" alt="avaliações">
+                            <p class="assessment">Ver avaliações</p>
+                     </div>
+
+                    <div class="color-button">
+                        <button class="color-button-NavyBlue"></button>
+                        <button class="color-button-brown"></button>
+                        <button class="color-button-purple"></button>
+                    </div>
+
+                    <div class="size-button">
+                        <p>Selecione o tamanho</p>    
+                        <button class="size-button-pp">PP</button>
+                        <button class="size-button-p">P</button>
+                        <button class="size-button-m">M</button>
+                        <button class="size-button-g">G</button>
+                        <button class="size-button-gg">GG</button>
+                        <p class="size-button-table">Ver tabela de tamanhos</p>
+                        <p class="size-button-product">Últimos 2 produtos em estoque. Não perca esta chance!</p>
+                    </div>
+
+                    <div class="price">
+                        <button class="price-button">10% off</button></br>
+                        <button class="price-button-old">R$ 97,20</button>
+                        <button class="price-button-new">R$87,48</button>
+                        <p class="price-inInstallments">Parcelados em até 4x sem juros no cartão</p>
+                    </div>
+                        
+                    <div>   
+                        <button class="AddToCart">
+                            <img src="./assets/icones/carrinho.png" alt="ícone de carrinho">
+                            <p>Adicionar ao carrinho</p>
+                        </button>    
+                    </div>
+                        
+                        
+                    <div class="calculate">
+                        <p class="calculateTheDeadline">Calcule o prazo e o valor da entrega</p>
+                        <!--<button class="calculateTheDeadline-button" type="text">-->
+                        <input class="calculateTheDeadline-input" type="text" placeholder="00000-000">
+                        <!--</button>-->
+                        <button class="calculateTheDeadline-button" id="button" type="button-calculate">Calcular</button>
+                    </div>    
+
+                    <div class="dropdown">
+                        <div class="dropdownList">
+                            <button onclick="toggleDropwnList()" class="dropdownList-button">
+                                Formas de pagamento
+                                <span id="arrow-1" class="material-symbols-outlined">expand_more</span>
+                                </button>
+                            <ul id="dropdownList-menu" class="dropdownList-menu">
+                                <li><a href="#">Crédito</a></li>
+                                <li><a href="#">Débito</a></li>
+                                <li><a href="#">Dinheiro</a></li>
+                                <li><a href="#">PIX</a></li>
+                                <li><a href="#">Boleto</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="exchangeDropdownList">
+                            <button onclick="toggleExchangeDropdownList()" class="exchangeDropdownList-button">
+                                Trocas e Devoluções
+                                <span id="arrow-2" class="material-symbols-outlined">expand_more</span>
+                                </button>
+                            <ul id="exchangeDropdownList-menu" class="exchangeDropdownList-menu">
+                                <li><a href="#">Vestido</a></li>
+                                <li><a href="#">Calça</a></li>
+                                <li><a href="#">Saia</a></li>
+                                <li><a href="#">Blusa</a></li>
+                            </ul>
+                        </div>
+                    </div>    
+
+                </div>
+        </section>
+    </main>    
+        <section class="contents"></section>
+
+        <section class="carousel"></section>
     
-
-<div class=""></div>
-
+    
 </body>
 </html>
