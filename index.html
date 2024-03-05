@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="script.js"></script>
-    <title> Teste e-commerce</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="reposive.css">
+
+    <title>Teste Panda (e-commerce)</title>
 </head>
 <body>
     <header class="header">
-        <p>Início </p>
+        <div class="header-p">
+            <p>Início </p>
             <span class="material-symbols-outlined">chevron_right</span>
        
         <p>Feminino</p>
@@ -25,42 +31,46 @@
             <span class="material-symbols-outlined">chevron_right</span>
 
         <p class="details">Ver detalhes</p>
+        </div>
+        
     </header>
-
-    <main class="main">
-        <section class="main-section">
-                <div class="main-container">
-                    <div class="showcase_01">
-                        <img src="./assets/imagens/carrossel-img-prod-01.jpg" alt="">
-                    </div>
-
-                    <div class="showcase_02">
-                        <img src="./assets/imagens/carrossel-img-prod-02.jpg" alt="">
-                    </div>
-
-                    <div class="showcase_03">
-                        <img src="./assets/imagens/carrossel-img-prod-03.jpg" alt="">
-                    </div>
-
-                    <div class="showcase_04">
-                        <img src="./assets/imagens/carrossel-img-prod-04.jpg" alt="">
-                    </div>
-                
-
-                <nav class="navigation">
+    <section class="main-vitrine">
+        <div class="main-container">
+            <div class="min-container">
+                <div class="image-group">
+                    <a class="image-link1" id="image1">
+                        <img src="./assets/imagens/modelo-01.jpg" alt="">
+                    </a>
+                    <a class="image-link2" id="image2">
+                        <img src="./assets/imagens/modelo-02.jpg" alt="">
+                    </a>
+                    <a class="image-link3" id="image3">
+                        <img src="./assets/imagens/modelo-03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="img-solo">
+                    <a class="image-link4" id="image4">
+                        <img src="./assets/imagens/modelo-04.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="textos">
+                <div class="navigation">
+    
                     <div class="right-navigation">
-                            <p class="dress">Vestido Intense Manga Longa</p>
-                            <p class="ref">Ref: 00000000</p>
-                            <img src="./assets/icones/Estrelas-Avaliações.png" alt="avaliações">
-                            <p class="assessment">Ver avaliações</p>
-                     </div>
-
+                        <p class="dress">Vestido Intense Manga Longa</p>
+                        <p class="ref">Ref: 00000000</p>
+                        <img src="./assets/icones/Estrelas-Avaliações.png" alt="avaliações">
+                        <p class="assessment">Ver avaliações</p>
+                    </div>
+    
                     <div class="color-button">
                         <button class="color-button-NavyBlue"></button>
                         <button class="color-button-brown"></button>
                         <button class="color-button-purple"></button>
                     </div>
-
+    
                     <div class="size-button">
                         <p>Selecione o tamanho</p>    
                         <button class="size-button-pp">PP</button>
@@ -71,7 +81,7 @@
                         <p class="size-button-table">Ver tabela de tamanhos</p>
                         <p class="size-button-product">Últimos 2 produtos em estoque. Não perca esta chance!</p>
                     </div>
-
+    
                     <div class="price">
                         <button class="price-button">10% off</button></br>
                         <button class="price-button-old">R$ 97,20</button>
@@ -89,48 +99,342 @@
                         
                     <div class="calculate">
                         <p class="calculateTheDeadline">Calcule o prazo e o valor da entrega</p>
-                        <!--<button class="calculateTheDeadline-button" type="text">-->
                         <input class="calculateTheDeadline-input" type="text" placeholder="00000-000">
-                        <!--</button>-->
-                        <button class="calculateTheDeadline-button" id="button" type="button-calculate">Calcular</button>
+                        
+                        <button class="calculateTheDeadline-button" id="btnCalcular" type="button-calculate">Calcular</button>
                     </div>    
-
-                    <div class="dropdown">
+    
+                    <div>
+                        
+                            <div class="dropdownList">
+                                <button onclick="clickFormaPagmento()" id="btnPagamento" class="dropdownList-button">
+                                    Formas de pagamento <i class="arrow down"></i>
+                                </button>
+                                <div id="box-toggle1" class="dropdown-content">
+                                    <p><b>Cartão de Crédito</b></p>
+                                    <p>Parcele em até <font color="#7A306C">4x sem juros</font> no cartão, 
+                                    ou em até 12x com juros.</p>
+    
+                                    <p><b>Pix</b></p>
+                                    <p>Pague com o Pix e garanta <font color="#7A306C"> 5% de desconto</font>
+                                    aplicado no valor final de sua compra!</p>
+    
+                                    <p><b>Boleto</b></p>
+                                    <p>Os pagamentos realizados por boleto podem 
+                                        demorar até 3 dias úteis para serem confirmados.
+                                    </p>
+    
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+        
+    
                         <div class="dropdownList">
-                            <button onclick="toggleDropwnList()" class="dropdownList-button">
-                                Formas de pagamento
-                                <span id="arrow-1" class="material-symbols-outlined">expand_more</span>
-                                </button>
-                            <ul id="dropdownList-menu" class="dropdownList-menu">
-                                <li><a href="#">Crédito</a></li>
-                                <li><a href="#">Débito</a></li>
-                                <li><a href="#">Dinheiro</a></li>
-                                <li><a href="#">PIX</a></li>
-                                <li><a href="#">Boleto</a></li>
-                            </ul>
+                            <button onclick="clickTrocasDevolucoes()" id="btnTroca" class="dropdownList-button">
+                                Trocas e Devoluções <i class="arrow down"></i>
+                            </button>
+                            <div id="box-toggle2" class="dropdown-content">
+                                <p><b><Font color="#7A306C"></Font></b></p>
+                                <p>Garantimos a <font color="#7A306C">primeira troca gratuita</font>
+                                em caso de problemas com o pedido. Você tem <font color="7 dias úteis para solicitar a devolução"></font>
+                            e receber reembolso!</p>
+                            </div>
                         </div>
 
-                        <div class="exchangeDropdownList">
-                            <button onclick="toggleExchangeDropdownList()" class="exchangeDropdownList-button">
-                                Trocas e Devoluções
-                                <span id="arrow-2" class="material-symbols-outlined">expand_more</span>
+                        <div class="detalhesNone">
+                            <div class="toggleDetalhesProd">
+                                <button onclick="clickDetalhes()" id="btnDetalhes" class="dropdownList-button">
+                                    Detalhes do Produto <i class="arrow down"></i>
                                 </button>
-                            <ul id="exchangeDropdownList-menu" class="exchangeDropdownList-menu">
-                                <li><a href="#">Vestido</a></li>
-                                <li><a href="#">Calça</a></li>
-                                <li><a href="#">Saia</a></li>
-                                <li><a href="#">Blusa</a></li>
-                            </ul>
-                        </div>
-                    </div>    
+                                <div id="box-toggle3" class="dropdown-content">
+                                    <p>O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual. Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional. O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais. Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.</p>
+                                </div>
+                            </div>
+                            <!-- segundo oculto -->
 
+                            <div class="toggleDetalhesProd">
+                                <button onclick="clickInfo()" id="btnCaract" class="dropdownList-button">
+                                    Características do Produto <i class="arrow down"></i>
+                                </button>
+                                <div id="box-toggle4" class="dropdown-content">
+                                    <p>
+                                        Composição: <br>
+                                        87% Poliéster <br>
+                                        10% Lycra <br>
+                                        3% Algodão <br> <br>
+                                        Lavagem: <br> 
+                                        Lavar à mão e secar em ambiente com sombra. Não utilizar máquina de secar e ferro de passar. 
+                                    </p> 
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        
+    
                 </div>
-        </section>
-    </main>    
-        <section class="contents"></section>
+            </div>
+        </div>
+    </section>
+    
+    <section class="desc">
+        <div class="container">
+            <div class="product-info">
+                <div class="product-description">
+                    <button onclick="detalhesProduto()" id="btnDetails" class="Product-details">Detalhes do Produto</button>  
+                    <button onclick="caracteristicaProduto()" id="btnCharacteristics" class="Product-characteristics">Características do Produto</button>
+                </div>
 
-        <section class="carousel"></section>
+                <div id="content-info1" class="product-content show">
+                    <p>O nosso modelo de vestido Intense com certeza é a tendência do momento! Com um corte justo no corpo, ele realça suas curvas de forma leve e sensual. Feito com uma combinação de tecidos de alta qualidade, incluindo lycra, poliéster e algodão, o vestido Intense proporciona um conforto excepcional. O design sem estampa adiciona um toque minimalista e versátil ao seu look, perfeito para ocasiões casuais. Seja para um encontro descontraído ou uma tarde entre amigos, este vestido é a escolha certa para um estilo sensual e sofisticado ao mesmo tempo.</p>
+                </div>
+
+                <div id="content-info2" class="product-content">
+                    <p>
+                        Composição: <br>
+                        87% Poliéster <br>
+                        10% Lycra <br>
+                        3% Algodão <br> <br>
+                        Lavagem: <br> 
+                        Lavar à mão e secar em ambiente com sombra. Não utilizar máquina de secar e ferro de passar. 
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-entrega">
+        <div class="container">
+            <div class="entrega">
+                <div class="entrega-img">
+                    <img src="assets/imagens/entrega.png" width="80" alt="Caminhão de entrega png">
+                </div>
+
+                <div class="entrega-info">
+                    <h1>Entrega rápida</h1>
+                    <p>Enviamos para todo o Brasil</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- CAROUSEL -->
+        <div class="container">
+            <button class="prev-button">
+                <span id="carousel-arrow-prev" class="material-symbols-outlined">arrow_back_ios</span>
+            </button>
+            <button class="next-button">
+                <span id="carousel-arrow-next" class="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
+            <div class="carousel-title">
+                <hr class="hr1">
+                Produtos que você também pode gostar
+                <hr class="hr2">
+            </div>
+           
+            <div class="carousel-content">
+               
+                <div class="carousel-img">
+                    <!-- Primeiro conjunto de slides -->
+                    <div class="carousel-img-content active">
+                        <!-- Slide 1 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button>Novo</button></div>
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-1.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Blazer Off White</p>
+                                <div class="carousel-img1-value">
+                                    <button class="carousel-img1-button-old-value">R$ 158,00</button>
+                                    <button class="carousel-img1-button-new-value">R$ 140,70</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>  
+                        <!-- Slide 2 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button style="background-color: #7A306C; color: #FFEAFB;">25% off</button></div>
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-2.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Nome do produto</p>
+                                <div class="carousel-img2-value">
+                                    <button class="carousel-img2-button-old-value">R$ 158,00</button>
+                                    <button class="carousel-img2-button-new-value">R$ 118,50</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button>Novo</button></div>
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-3.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Calça Wide Leg Destroyed</p>
+                                <div class="carousel-img2-value">
+                                    <button class="carousel-img2-button-old-value">R$ 158,00</button>
+                                    <button class="carousel-img2-button-new-value">R$ 136,80</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button>Novo</button></div>                                
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-4.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Camisa Jeans com Bolsos</p>
+                                <div class="carousel-img2-value">
+                                    <button class="carousel-img2-button-old-value">R$ 110,40</button>
+                                    <button class="carousel-img2-button-new-value">R$ 93,84</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
     
-    
+                    <!-- Segundo conjunto de slides -->
+                    <div class="carousel-img-content active">
+                        <!-- Slide 1 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button>Novo</button></div>
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-1.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Blazer Off White</p>
+                                <div class="carousel-img1-value">
+                                    <button class="carousel-img1-button-old-value">R$ 158,00</button>
+                                    <button class="carousel-img1-button-new-value">R$ 140,70</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>  
+                        <!-- Slide 2 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button style="background-color: #7A306C; color: #FFEAFB;">25% off</button></div>
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-2.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Nome do produto</p>
+                                <div class="carousel-img2-value">
+                                    <button class="carousel-img2-button-old-value">R$ 158,00</button>
+                                    <button class="carousel-img2-button-new-value">R$ 118,50</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button>Novo</button></div>
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-3.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Calça Wide Leg Destroyed</p>
+                                <div class="carousel-img2-value">
+                                    <button class="carousel-img2-button-old-value">R$ 158,00</button>
+                                    <button class="carousel-img2-button-new-value">R$ 136,80</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-img2">
+                            <div class="btn-new"><button>Novo</button></div>                                
+                            <div class="heart">&#9825;</div>
+                            <img src="assets/imagens/Carrossel-img-4.png" alt="">
+                            <div class="carousel-img-subtitle">
+                                <p>Camisa Jeans com Bolsos</p>
+                                <div class="carousel-img2-value">
+                                    <button class="carousel-img2-button-old-value">R$ 110,40</button>
+                                    <button class="carousel-img2-button-new-value">R$ 93,84</button>
+                                </div>
+                            </div>
+                            <div class="carousel-button-float">
+                                <button class="carousel-button-float1">
+                                    <img src="./assets/icones/carrinho.png" alt="">
+                                    <p>Adicionar ao carrinho</p>
+                                </button>
+                                <button class="carousel-button-float2">
+                                    <p>Ver Produto</p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- FIM DO CAROUSEL -->
+
+
+       
+        
+    </section>
+
 </body>
+<script src="script.js"></script>
+
 </html>

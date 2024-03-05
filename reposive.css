@@ -1,0 +1,140 @@
+@media only screen and (max-width: 700px) {
+  .header p, .header span {
+      left: 0!important;
+    }
+  }
+
+  @media only screen and (max-width: 440px) {
+    .header p, .header span {
+        /* background-color: black; */
+        left: 0!important;
+        font-size:12px;
+      }
+    } 
+        /*FIM DO HEADER */
+
+
+
+@media only screen and (max-width: 1060px){
+
+  .image-group{
+    display: inline-flex;
+    flex-direction: row;
+  }
+
+  .min-container{
+    flex-direction: column-reverse; /* Alterando para coluna em telas pequenas e invertendo a ordem */
+  }
+  .textos{
+    
+    order: 2; /* Alterando a ordem da div .textos para aparecer após as imagens */
+    width: 100%; /* Ocupando toda a largura da .min-container */
+    padding: 20px; /* Adicionando espaçamento interno */
+  }
+}
+
+@media only screen and (max-width: 996px){
+    .min-container {
+      display: flex;
+      flex-direction: column-reverse; /* Invertendo a ordem para colocar a imagem solo acima */
+      align-items: center; /* Alinhando os itens centralmente */
+    }
+  
+    .img-solo {
+      margin-bottom: 20px; /* Adicionando margem inferior para separar a imagem solo das imagens em grupo */
+    }
+  
+    .image-group {
+      display: flex;
+      flex-direction: row; /* Mantendo as imagens em grupo lado a lado */
+    }
+  
+    .textos {
+      width: 100%; /* Ocupando toda a largura da .min-container */
+      padding: 20px; /* Adicionando espaçamento interno */
+    }
+
+    .main-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 520px){
+    .image-group img{
+      width: 100px;
+    }
+
+    .desc .main-container{
+      width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 20px; /* Adicionando um espaço interno */
+    }
+    .product-content{
+      background-color: black;
+
+     }
+
+     .section-entrega .entrega{
+        display: flex;
+     }
+
+     .carousel-title {
+      padding: 10px; /* Adiciona algum espaço interno */
+      position: relative; /* Para posicionar os hr's relativamente */
+  
+      /* Estilo para hr1 */
+      .hr1 {
+          border: none; /* Remove a borda padrão do hr */
+          height: 1px; /* Define a altura da linha */
+          background: linear-gradient(to right, green, white); /* Define o gradiente de verde para branco */
+          position: absolute; 
+          top: 0;
+          width: 50%; 
+      }
+  
+      /* Estilo para hr2 */
+      .hr2 {
+          border: none; /* Remove a borda padrão do hr */
+          height: 1px; /* Define a altura da linha */
+          background: linear-gradient(to right, white, purple); /* Define o gradiente de branco para roxo */
+          position: absolute; /* Posiciona o hr absolutamente */
+          bottom: 0; /* Alinha o hr à parte inferior da div */
+          width: 100%; /* Define a largura do hr */
+      }
+      .carousel-content{
+        
+        overflow-x: scroll;
+
+      }
+  }
+  
+    
+     }
+  
+     
+    
+
+
+@media only screen and (max-width: 910px){
+
+  .desc .main-container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px; /* Adicionando um espaço interno */
+  }
+  .product-content{
+    background-color: red;
+    width: 300PX;
+  }
+  .product-description{
+    flex-direction: column;
+  }
+  .product-info{
+    display: none;
+  }
+  .detalhesNone{
+    display: block;
+  }
+}

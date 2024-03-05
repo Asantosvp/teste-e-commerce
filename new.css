@@ -1,0 +1,530 @@
+/* vitrine */
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+    position: relative;
+}
+.main-vitrine .main-container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px; 
+}
+
+.min-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Espaçamento inferior entre as colunas */
+    padding: 10px; /* Adicionando um espaço interno */
+}
+
+.image-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-group img {
+    width: 160px;
+    margin-bottom: 10px; /* Espaçamento inferior entre as imagens */
+    margin-left: 10px;
+}
+
+.img-solo img{
+    width: 100%; /* Para ocupar todo o espaço disponível */
+    margin: 10px;
+}
+
+.textos {
+    flex: 1; /* Para que ocupe o restante do espaço disponível */
+    padding: 0 20px; /* Adicionando um espaço interno */
+}
+
+
+/* INFO-PRODUTO */
+
+.navigation .right-navigation .dress {
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31.2px;
+}
+
+.navigation .right-navigation .ref {
+    color: #9C9C9C;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.selected-image img {
+    border: 5px solid #7A306C;
+    border-radius: 5px;
+}
+
+body {
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+.header {
+    margin-top: auto;
+    width: 100%;
+}
+
+.main {
+    margin-top: auto;
+}
+
+header p {
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    left: 100px;
+    cursor: pointer;
+}
+
+.header p, .header span {
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    left: 260px;
+}
+
+.details {
+    color: #7A306C;
+    font-size: 16px;
+    font-weight: 500;
+}  
+
+/*Avaliações*/
+.assessment {
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9C9C9C;
+    margin-inline-start: 130px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+
+
+/*botão selecione a cor*/
+.color-button {
+    display: flex;
+    margin-top: auto;
+}
+
+.color-button-NavyBlue {
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: #014188;
+    border: none; 
+}
+
+.color-button-brown {
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: #9B4D04;
+    border: none;
+}
+
+.color-button-purple {
+    border-radius: 100%;
+    cursor: pointer;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    background-color: #811BBF;
+    border: none;
+}
+
+.color-button button.selected {
+    border: 5px solid #7A306C;
+    height: 50px;
+    width: 50px;
+}
+
+
+/*botão selecione o tamanho*/
+.size-button .size-button-pp {
+    background-color: white;
+    color: #0C1B33;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black; /* Simplificação da propriedade border */
+    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
+}
+
+.size-button .size-button-p {
+    background-color: white;
+    color: #0C1B33;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black; /* Simplificação da propriedade border */
+    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
+}
+
+.size-button .size-button-m {
+    background-color: white;
+    color: #0C1B33;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black; /* Simplificação da propriedade border */
+    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
+}
+
+.size-button .size-button-g {
+    background-color: white;
+    color: #0C1B33;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black; /* Simplificação da propriedade border */
+    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
+}
+
+.size-button .size-button-gg {
+    background-color: white;
+    color: #0C1B33;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid black; /* Simplificação da propriedade border */
+    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
+}
+
+.size-button button.selected {
+    border: 2px solid #7A306C;
+    color: #7A306C;
+}
+.size-button .size-button-pp:hover {
+    /* Estilos adicionados quando o mouse passa sobre o botão */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+.size-button .size-button-p:hover {
+    /* Estilos adicionados quando o mouse passa sobre o botão */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+.size-button .size-button-m:hover {
+    /* Estilos adicionados quando o mouse passa sobre o botão */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+.size-button .size-button-g:hover {
+    /* Estilos adicionados quando o mouse passa sobre o botão */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+.size-button .size-button-gg:hover {
+    /* Estilos adicionados quando o mouse passa sobre o botão */
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
+}
+
+/*tabela de tamanhos*/
+.size-button-table {
+    color: #9C9C9C;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*produtos em estoque*/
+.size-button-product {
+    color: #E30E41;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+    cursor: pointer;  
+}
+
+/*PREÇO*/
+.price {
+    width: 263px;
+    height: 90px;
+    top: 373px;
+    left: 755px;
+    border-radius: 5px;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+}
+
+.price-button {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15.6px;
+    color: #FFEAFB;
+    align-items: center;
+    background-color: #7A306C;
+    width: Hug(59px);
+    height: fixed(18px);
+    top: 373px;
+    left: 758px;
+    border-radius: 5px;
+    padding: 4px 8px 4px 8px;
+    border: none;
+}
+
+.price-button-old {
+    color: #9C9C9C;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20.8px;
+    align-items: center;
+    width: 77px;
+    height: -300px;
+    top: 10.5;
+    text-decoration:line-through;
+    border: none;
+    background-color: white;
+}
+
+.price-button-new {
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 41.6px;
+    align-items: center;
+    width: 77px;
+    height: -300px;
+    top: 10.5;
+    border: none;
+    background-color: white;
+}
+
+.price-inInstallments {
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    width: 263px;
+    height: 16px;
+    top: 447px;
+    left: 755px;
+}
+
+/*Adicionar ao carrinho*/
+.AddToCart {
+    background-color: #7A306C;
+    width: 302px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    padding: 0 20px;
+    gap: 10px;
+    cursor: pointer;
+    margin: 32px 0px;
+}
+
+.AddToCart:hover {
+    background-color: #d863c2;
+    transition: 1s;
+}
+
+.AddToCart img {
+    width: 19.07px;
+    height: 19.07px;
+    margin-top: 2px;    
+    border: 1.06px;
+    line-height: center;
+}
+
+.AddToCart p {
+    color: #FFEAFB;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: center;
+    width: 191px;
+    height: 26px;
+}
+
+/*Calcule o prazo da entrega*/
+.calculate {
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.calculateTheDeadline {
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: center;
+    width: 191px;
+    height: 16px;
+    top: 573px;
+    left: 755px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculateTheDeadline-input {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 106px;
+    height: 31px;
+    top: 597px;
+    left: 755px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.calculateTheDeadline-button {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px 20px 8px 20px;
+    gap: 10px;
+    width: 86px;
+    height: 36px;
+    top: 597px;
+    left: 867px; 
+    text-align: center;
+    font-size: 16px;
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.calculateTheDeadline-button:hover {
+    color: #FFEAFB;
+    background-color: #0C1B33;
+    transition: all 1s ease;
+}
+
+/*Lista suspensa: forma de pagamento*/
+
+
+.dropdown-content {
+    display: none;
+    transition: opacity 0.5s ease; /* Defina uma transição suave */
+}
+
+.dropdown-content.show {
+    display: block;
+    opacity: 1;
+    width: 310px;
+}
+
+
+
+.dropdownList span {
+    height: 100px;
+    margin-left: 350px;
+    margin-top: -100rem;
+    max-width: 200px;
+}
+
+.dropdownList-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin: 24px 0;
+    cursor: pointer;
+    box-shadow: 0 0.5px 0 0 #9C9C9C;
+    height: 50px;
+    width: 300px;
+    text-align: start;  
+}
+
+.dropdownList-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.dropdownList-menu li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownList-menu li:hover {
+    background-color: #f1f1f1;
+}
+
+/*Lista suspensa: Troca e Devoluções*/
+.exchangeDropdownList span {
+    height: 100px;
+    margin-left: 350px;
+    margin-top: -100rem;
+    max-width: 200px;
+}
+/* fim vitrine */
+
+.detalhesNone{
+    display: none;
+}
+
+/* fim  toggles*/
+
+.section-entrega .entrega{
+    display: none;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* fim caminhao de entrega */
+
+.hr1 , .hr2{
+    height: 0;
+    width: 0;
+}

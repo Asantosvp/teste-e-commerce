@@ -1,508 +1,35 @@
-body {
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-}
-
-
-
-header p {
-    display: inline-block;
-    margin: 0;
-    padding: 10px;
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    position: relative;
-    top: 0;
-    left: 260px;
-    cursor: pointer;
-}
-
-.header p, .header span {
-    vertical-align: middle;
-    position: relative;
-    top: 0;
-    left: 260px;
-}
-
-.details {
-    color: #7A306C;
-    font-size: 16px;
-    font-weight: 500;
-}  
 
 /*main-section*/
 .main-section {
-    width: Hug (1,236px);
-    height: Hug (1,567px)s;
-    top: 86px;
-    left: 102px;
-    gap: 80px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        padding-bottom: 70px;
 }
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    float: right;
+  }
 
 /*main-container*/
 .main-container {
-    position: relative;
-    margin-top: 0%;
-    margin-left: 102px;
-    margin-right: 102px;    
-}
-
-/*vitrine*/
-.showcase_01 img {
-position: relative;
-left: 68px;
-width: 170.03px; /*largura*/
-height: 256px; /*altura*/
-border-radius: 5px;
-border: 5px;
-top: 40px;
-}
-
-.showcase_02 img {
-    position: relative;
-    left: 68px;
-    width: 170.03px; /*largura*/
-    height: 256px; /*altura*/
-    border-radius: 5px;
-    border: 5px;
-    margin-top: 40px;
-    }
-
-.showcase_03 img {
-    position: relative;
-    left: 68px;
-    width: 170.03px; /*largura*/
-    height: 256px; /*altura*/
-    border-radius: 5px;
-    border: 5px;
-    overflow: hidden; /* Oculta o conteúdo que excede as dimensões da div */
-    padding: 1px;
-
-}    
-
-.showcase_04 img {
-    position: relative;
-    left: 254px;
-    width: 449px; /*largura*/
-    height: 780px; /*altura*/
-    border-radius: 5px;
-    border: 5px;
-    top: -780px;
-    }
-
-/*navigation*/
-.navigation{
-    position: relative;
-    margin-left: 800px;
-    margin-top: -1580px;
-    padding: 30px;
-}
-
-.navigation .right-navigation .dress {
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 31.2px;
-}
-
-.navigation .right-navigation .ref {
-    color: #9C9C9C;
-    font-weight: 300;
-    font-size: 16px;
-}
-
-/*Avaliações*/
-.assessment {
-    text-decoration: underline;
-    font-size: 12px;
-    font-weight: 400;
-    color: #9C9C9C;
-    margin-inline-start: 130px;
-    margin-top: -20px;
-    cursor: pointer;
-}
-
-/*botão selecione a cor*/
-.color-button {
     display: flex;
-    margin-top: auto;
 }
 
-.color-button-NavyBlue {
-    border-radius: 100%;
-    cursor: pointer;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-    background-color: #014188;
-    border: none; 
-}
-
-.color-button-brown {
-    border-radius: 100%;
-    cursor: pointer;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-    background-color: #9B4D04;
-    border: none;
-}
-
-.color-button-purple {
-    border-radius: 100%;
-    cursor: pointer;
-    border: 1px solid black;
-    height: 50px;
-    width: 50px;
-    margin: 5px;
-    background-color: #811BBF;
-    border: none;
-}
-
-.color-button button.selected {
-    border: 5px solid #7A306C;
-    height: 50px;
-    width: 50px;
-}
+/*Selecione o modelo*/
 
 
-/*botão selecione tamanho*/
-.size-button .size-button-pp {
-    background-color: white;
-    color: #0C1B33;
-    font-size: 16px;
-    line-height: 20.8px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black; /* Simplificação da propriedade border */
-    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
-}
-
-.size-button .size-button-p {
-    background-color: white;
-    color: #0C1B33;
-    font-size: 16px;
-    line-height: 20.8px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black; /* Simplificação da propriedade border */
-    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
-}
-
-.size-button .size-button-m {
-    background-color: white;
-    color: #0C1B33;
-    font-size: 16px;
-    line-height: 20.8px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black; /* Simplificação da propriedade border */
-    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
-}
-
-.size-button .size-button-g {
-    background-color: white;
-    color: #0C1B33;
-    font-size: 16px;
-    line-height: 20.8px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black; /* Simplificação da propriedade border */
-    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
-}
-
-.size-button .size-button-gg {
-    background-color: white;
-    color: #0C1B33;
-    font-size: 16px;
-    line-height: 20.8px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-    border-radius: 5px;
-    border: 1px solid black; /* Simplificação da propriedade border */
-    transition: box-shadow 0.1s ease; /* Transição para a propriedade box-shadow */
-}
-
-.size-button button.selected {
-    border: 2px solid #7A306C;
-    color: #7A306C;
-}
-.size-button .size-button-pp:hover {
-    /* Estilos adicionados quando o mouse passa sobre o botão */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
-}
-
-.size-button .size-button-p:hover {
-    /* Estilos adicionados quando o mouse passa sobre o botão */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
-}
-
-.size-button .size-button-m:hover {
-    /* Estilos adicionados quando o mouse passa sobre o botão */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
-}
-
-.size-button .size-button-g:hover {
-    /* Estilos adicionados quando o mouse passa sobre o botão */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
-}
-
-.size-button .size-button-gg:hover {
-    /* Estilos adicionados quando o mouse passa sobre o botão */
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); /* Efeito de sombra */
-}
-
-/*tabela de tamanhos*/
-.size-button-table {
-    color: #9C9C9C;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15.6px;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-/*produtos em estoque*/
-.size-button-product {
-    color: #E30E41;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15.6px;
-    cursor: pointer;  
-}
-
-/*PREÇO*/
-.price {
-    width: 263px;
-    height: 90px;
-    top: 373px;
-    left: 755px;
-    border-radius: 5px;
-    padding: 10px 0 10px 0;
-}
-
-.price-button {
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15.6px;
-    color: #FFEAFB;
-    align-items: center;
-    background-color: #7A306C;
-    width: Hug(59px);
-    height: fixed(18px);
-    top: 373px;
-    left: 758px;
-    border-radius: 5px;
-    padding: 4px 8px 4px 8px;
-    border: none;
-}
-
-.price-button-old {
-    color: #9C9C9C;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 20.8px;
-    align-items: center;
-    width: 77px;
-    height: -300px;
-    top: 10.5;
-    text-decoration:line-through;
-    border: none;
-    background-color: white;
-}
-
-.price-button-new {
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 41.6px;
-    align-items: center;
-    width: 77px;
-    height: -300px;
-    top: 10.5;
-    border: none;
-    background-color: white;
-}
-
-.price-inInstallments {
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    width: 263px;
-    height: 16px;
-    top: 447px;
-    left: 755px;
-}
-
-/*Adicionar ao carrinho*/
-.AddToCart {
-    background-color: #7A306C;
-    width: 302px;
-    height: 46px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    border: none;
-    padding: 0 20px;
-    gap: 10px;
-    cursor: pointer;
-}
-
-.AddToCart img {
-    width: 19.07px;
-    height: 19.07px;
-    margin-top: 2px;    
-    border: 1.06px;
-    line-height: center;
-}
-
-.AddToCart p {
-    color: #FFEAFB;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: center;
-    width: 191px;
-    height: 26px;
-}
-
-/*Calcule o prazo da entrega*/
-.calculate {
-    justify-content: space-between;
-}
-
-.calculateTheDeadline {
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: center;
-    width: 191px;
-    height: 16px;
-    top: 573px;
-    left: 755px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.calculateTheDeadline-input {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 106px;
-    height: 31px;
-    top: 597px;
-    left: 755px;
-    text-align: center;
-    font-size: 12px;
-}
-
-.calculateTheDeadline-button {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 8px 20px 8px 20px;
-    gap: 10px;
-    width: 86px;
-    height: 36px;
-    top: 597px;
-    left: 867px; 
-    text-align: center;
-    font-size: 16px;
-    color: #0C1B33;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    cursor: pointer;
-}
-
-/*Lista suspensa: forma de pagamento*/
-.dropdownList{
-    position: relative;
-    display: inline-block;
-}
 
 
-.dropdownList-button {
-    background-color: violet;
-    color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    margin: 5px;
-    cursor: pointer;
-    box-shadow: 0 0.5px 0 0 #9C9C9C;
-    width: 320px;
-    height: 50px;
-    text-align: start;  
-}
 
-.dropdownList-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdownList-menu li {
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdownList-menu li:hover {
-    background-color: #f1f1f1;
-}
-
-/*Lista suspensa: Troca e Devoluções*/
-.exchangeDropdownList{
-    position: relative;
-    display: inline-block;
-    right: 100px;
-}
-
-.exchangeDropdownList-button {
-    background-color: red;
-    color: black;
-    width: 320px;
-    height: 50px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 0.5px 1px 1px #9C9C9C;
-    margin-left: 105px;
-}
-
-.exchangeDropdownList-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
+    
 
 .exchangeDropdownList-menu li {
     padding: 12px 16px;
@@ -512,4 +39,412 @@ top: 40px;
 
 .exchangeDropdownList-menu li:hover {
     background-color: #f1f1f1;
+}
+
+/*Conteúdo*/
+.product-main-content {
+    width: Hug (1,236px);
+    height: Hug (1,567px);
+    top: 86px;
+    left: 102px;
+    gap: 80px;
+
+}
+
+.product-info {
+    width: 900px;
+    height: 178px;  
+    padding-left: 50px;  
+}
+
+.product-description {
+    display: flex;
+}
+
+.Product-details{
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    color: #7A306C;
+    text-decoration: underline;
+    font-size: 24px;
+    cursor: pointer;
+
+    background: none;
+	border: none;
+	outline: inherit;
+}
+
+.Product-characteristics {
+    margin-left: 10px;
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #9C9C9C;
+
+    background: none;
+	border: none;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.product-content {
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    padding: 20px;
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.product-content.show{
+     display: block;
+     transition: opacity 1s;
+    
+}
+
+/*Vitrine*/
+
+
+.carousel-content .material-symbols-outlined{
+    background: transparent;
+    color: #0C1B33;
+}
+
+.carousel-title { 
+    color: #0C1B33;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.carousel-img-content active .slide {
+    margin-left: 10px;
+}
+.carousel-img2 .carousel-button-float {
+    background-color: #0C1B33;
+    opacity: 0; /* Começa com opacidade zero */
+    transition: opacity 0.1s ease, transform 0.1s ease; 
+    transform: translateY(0);
+}
+
+.carousel-img2:hover .carousel-button-float {
+    background-color: #0C1B33;
+    opacity: 1;
+    transform: translateY(-200px); 
+}
+.carousel-img2{
+    margin: 5px;
+}
+
+
+
+.carousel-img span {
+    color: #0C1B33;
+    position: relative;
+    font-size: 50px;
+}
+
+
+/*valores - vitrine*/
+.carousel-img-subtitle {
+    /* display: flex; */
+    text-align: center;
+    background-color: white; 
+}
+.carousel-button-float{
+    opacity: 0;
+    padding: 20px;
+}
+.carousel-button-float1 {
+    background-color: #7A306C;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+
+.carousel-button-float1 img {
+    width: 19.07px;
+    height: 19.07px;
+    margin-top: 2px;    
+    border: 1.06px;
+    line-height: center;
+}
+
+.carousel-button-float1 p {
+    color: #FFEAFB;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: center;
+    width: 100%;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    gap: 10px;
+    cursor: pointer;
+}
+.carousel-button-float2{
+    background-color:orange;
+    width: 100%;
+    height: 46px;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    /* padding: 5px; */
+    gap: 10px;
+    cursor: pointer;
+}
+
+.carousel-button-float2 p{
+    color: #FFEAFB;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: center;        
+    text-align: center;
+}
+.carousel-img1-button-old-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9C9C9C;
+    text-decoration:line-through;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img1-button-new-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0C1B33;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img2-button-old-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9C9C9C;
+    text-decoration:line-through;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img2-button-new-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0C1B33;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img3-button-old-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9C9C9C;
+    text-decoration:line-through;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img3-button-new-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0C1B33;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img4-button-old-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #9C9C9C;
+    text-decoration:line-through;
+    border: none;
+    background-color: white;
+}
+
+.carousel-img4-button-new-value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0C1B33;
+    border: none;
+    background-color: white;
+}
+
+.heart {
+    font-size: 44px;
+    cursor: pointer;
+    position: absolute;
+    color: #9C9C9C;
+    right: 25px;
+}
+
+.carousel-slide{
+    position: relative;
+}
+.btn-new {
+    color: #7A306C;
+    position: absolute;
+    /* left: 20px; */
+    height: 10px;
+}
+
+.btn-new button{
+    text-decoration: none;
+    border: none;
+    background-color: #DBFE87;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+
+}
+
+
+/* novo carousel */
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.content-show {
+    display:flex;
+  
+}
+.carousel-controls {
+    text-align: center;
+}
+
+.carousel-item {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+    scroll-snap-align: start;
+}
+
+
+
+.wrapper-carousel {
+    display: flex;
+    overflow: hidden;
+}
+.carousel-slide {
+    flex: 0 0 auto;
+    width: 25%; /* Cada slide ocupa 25% da largura total */
+    text-align: center;
+}
+.carousel-button {
+    cursor: pointer;
+    margin: auto 10px;
+}
+
+
+
+.wrapper-caurosel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Define a largura dos slides */
+    padding: 10px; /* Adiciona espaçamento entre os slides */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.carousel-slide img {
+    /* max-width: 100%; */
+    height: auto;
+    display: block; /* Remove espaços em branco ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Adicione outros estilos conforme necessário para o layout */
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*solution */
+
+.main-section {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.wrapper-caurosel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 auto; /* Define a largura automática dos slides */
+    padding: 10px; /* Adiciona espaçamento entre os slides */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaços em branco ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.carousel-img1, .carousel-img2, .carousel-img3, carousel-img4{
+    position: relative;
+}
+
+.prev-button, .next-button {
+    position: absolute;
+    top: 30%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 22px;
+}
+
+.prev-button {
+    left: 0%;
+    z-index: 2;
+}
+
+.next-button {
+    right: 0;
+}
+.carousel-content{
+    position: relative;
 }
